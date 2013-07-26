@@ -7,6 +7,8 @@ es:
       questions:  "Preguntas"
       news:       "Noticias"
       contact:    "Contacto"
+      login:      "Iniciar la sesión"
+      register:   "Registro"
       
   store:
     index:

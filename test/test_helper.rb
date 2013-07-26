@@ -15,6 +15,7 @@ class ActiveSupport::TestCase
 
   def login_as(user)
     session[:user_id] = users(user).id
+    session[:user_permission] = 1
   end
   
   def logout

@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
 
   protected
     def authorize
-      unless User.find_by_id(session[:user_id])
-        redirect_to login_url, notice: "Please log in"
+      unless User.find_by_id(session[:user_id]) and session[:user_permission] == 1
+        redirect_to login_url, alert: "Permission denied. Your are not an administrator."
       end
     end
     

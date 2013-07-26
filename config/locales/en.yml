@@ -28,6 +28,8 @@ en:
       questions:  "Questions"
       news:       "News"
       contact:    "Contact"
+      login:      "Login"
+      register:   "Register"
   
   store:
     index:
