@@ -27,6 +27,9 @@ body { padding-top: 60px; }
 // And finally bootswatch style itself
 @import "bootswatch/cerulean/bootswatch";
 
+body {
+  background: #F8F8FF;
+}
 // #banner {
   // background: #9c9;
   // padding: 10px;

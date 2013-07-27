@@ -5,6 +5,20 @@ class User < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   has_secure_password
   
+  has_one :cart, dependent: :destroy
+  
+    
+  # def get_user_cart
+    # unless cart
+      # cart = Cart.create
+    # end
+    # cart
+  # end
+  
+  def set_user_cart(current_cart)
+    cart = current_cart
+  end
+  
   private
     def ensure_an_admin_remains
       if User.count.zero?

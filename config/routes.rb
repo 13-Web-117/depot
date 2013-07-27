@@ -1,4 +1,5 @@
 Depot::Application.routes.draw do
+  get "user_cart/show_user_cart"
   get 'admin' => 'admin#index'
   
   controller :sessions do

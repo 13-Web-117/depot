@@ -9,6 +9,8 @@ es:
       contact:    "Contacto"
       login:      "Iniciar la sesión"
       register:   "Registro"
+      search:     "Buscar"
+      language:   "Idioma"
       
   store:
     index:

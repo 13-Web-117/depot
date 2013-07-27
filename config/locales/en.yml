@@ -30,6 +30,8 @@ en:
       contact:    "Contact"
       login:      "Login"
       register:   "Register"
+      search:     "Search"
+      language:   "Language"
   
   store:
     index:

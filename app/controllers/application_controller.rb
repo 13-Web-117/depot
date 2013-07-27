@@ -32,10 +32,17 @@ class ApplicationController < ActionController::Base
   private
     def current_cart
       Cart.find(session[:cart_id])
-    rescue ActiveRecord::RecordNotFound
-      cart = Cart.create
-      session[:cart_id] = cart.id
-      cart
+      rescue ActiveRecord::RecordNotFound
+        cart = Cart.create
+        session[:cart_id] = cart.id
+        cart
+    end
+    
+    def destroy_cart
+      if session[:cart_id]
+        Cart.destroy(session[:cart_id])
+        session[:cart_id] = nil
+      end
     end
 
 end

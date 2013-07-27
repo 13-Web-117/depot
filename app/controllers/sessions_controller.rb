@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     user = User.find_by_name(params[:name])
     if user and user.authenticate(params[:password])
       store_session user
+      user.set_user_cart current_cart
       redirect_to admin_url
     else
       redirect_to login_url, alert: "Invalid user/password combination"
@@ -16,6 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     delete_session
+    destroy_cart
     redirect_to store_url, notice: "Logged out"
   end
   
