@@ -7,7 +7,7 @@ class StoreController < ApplicationController
     else
       @products = Product.paginate page: params[:page], 
                                    order: 'title desc', 
-                                   per_page: 5
+                                   per_page: 4
       @cart = current_cart
       @parent_categories = ParentCategory.all
     end

@@ -1,9 +1,3 @@
-<script type="text/javascript">
-  $(function(){
-    $('#myCarousel').carousel();
-  })
-</script>
-
 <% if notice %>
 <p id="notice" class="alert alert-info">
 	<strong>Information </strong><%= notice %>
@@ -17,22 +11,33 @@
 <% end %>
 
 <h1><%= t('.title_html') %></h1>
-<p class="lead">
+<!-- <p class="lead">
 	Find your books here.
-</p>
+</p> -->
 
-<div id="myCarousel" class="carousel slide" data-interval="1000">
+<div id="my-carousel" class="well carousel slide" data-interval="1000">
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="http://cleancanvas.herokuapp.com/img/backgrounds/landscape.png"/>
+			<%= image_tag("indigo.jpg") %>
+			<div class="carousel-caption">
+				<h4>Bootstrap v1.0.0</h4>
+			</div>
 		</div>
 		<div class="item">
-			<img src="http://cleancanvas.herokuapp.com/img/backgrounds/aqua.jpg"/>
+			<%= image_tag("aqua.jpg") %>
+			<div class="carousel-caption">
+				<h4>Bootstrap v1.0.0</h4>
+			</div>
 		</div>
 		<div class="item">
-			<img src="http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg"/>
+			<%= image_tag("color-splash.jpg")%>
+			<div class="carousel-caption">
+				<h4>Bootstrap v1.0.0</h4>
+			</div>
 		</div>
 	</div>
+	<a class="carousel-control left" href="#my-carousel" data-slide="prev">‹</a>
+	<a class="carousel-control right" href="#my-carousel" data-slide="next">›</a>
 </div>
 
 <div id="book_list">
