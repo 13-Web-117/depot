@@ -33,16 +33,18 @@
 </table>
 
 <div id="btn-group">
-<%= link_to "Empty",
+<%= link_to t(".empty"),
 			 user_cart,
 			 confirm: 'Are you sure?',
 			 method: :delete,
 			 remote: true,
-			 class: "btn btn-danger", 
-			 id: "btn-empty" %>
-<%= submit_tag "Update",
+			 class: "btn btn-danger" %>
+<%= submit_tag t(".update"),
 			   remote: true,
-			   class: "btn btn-primary", 
-			   id: "btn-update" %>
+			   class: "btn btn-primary"%>
+<%= button_to t('.checkout'), 
+			  new_order_path, 
+			  method: :get, 
+			  class: "btn btn-primary" %>			   
 </div>
 <% end %>

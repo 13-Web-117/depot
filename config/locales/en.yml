@@ -47,6 +47,12 @@ en:
       title:      "Your Cart"
       empty:      "Empty Cart"
       checkout:   "Checkout"
+  
+  user_cart:
+    user_cart:
+      update:     "Update"
+      empty:      "Empty Cart"
+      checkout:   "Checkout"
       
   number:
     currency:

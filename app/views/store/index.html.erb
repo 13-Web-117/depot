@@ -1,3 +1,9 @@
+<script type="text/javascript">
+  $(function(){
+    $('#myCarousel').carousel();
+  })
+</script>
+
 <% if notice %>
 <p id="notice" class="alert alert-info">
 	<strong>Information </strong><%= notice %>
@@ -14,6 +20,20 @@
 <p class="lead">
 	Find your books here.
 </p>
+
+<div id="myCarousel" class="carousel slide" data-interval="1000">
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="http://cleancanvas.herokuapp.com/img/backgrounds/landscape.png"/>
+		</div>
+		<div class="item">
+			<img src="http://cleancanvas.herokuapp.com/img/backgrounds/aqua.jpg"/>
+		</div>
+		<div class="item">
+			<img src="http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg"/>
+		</div>
+	</div>
+</div>
 
 <div id="book_list">
 	<%= render @products %>

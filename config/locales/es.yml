@@ -26,6 +26,12 @@ es:
       title:      "Carrito de la Compra"
       empty:      "Vaciar Carrito"
       checkout:   "Comprar"
+  
+  user_cart:
+    user_cart:
+      update:     "Actualizar"
+      empty:      "Vaciar Carrito"
+      checkout:   "Comprar"
       
   number:
     currency:
