@@ -10,8 +10,11 @@ class Product < ActiveRecord::Base
   has_many :line_items
   has_many :orders, through: :line_items
   before_destroy :ensure_not_referenced_by_any_line_item
+  belongs_to :category
   
-  attr_accessible :title, :description, :image_url, :price
+  accepts_nested_attributes_for :category
+  
+  attr_accessible :title, :description, :image_url, :price, :category_id
   
   private
   

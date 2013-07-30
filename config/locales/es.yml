@@ -16,6 +16,10 @@ es:
     index:
       title_html: "Su Cat&aacute;logo de Pragmatic"
       add_html:   "A&ntilde;adir al Carrito"
+  
+  products:
+    product:
+      add_html:   "A&ntilde;adir al Carrito"
       
   carts:
     cart:

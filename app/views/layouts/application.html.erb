@@ -87,6 +87,20 @@
 				<%= render @cart %>
 				<% end %>
 				<% end %>
+
+				<% if @parent_categories %>
+				<div class="well" id="category">
+					<h2>Product Categories</h2>
+					<dl>
+					<% @parent_categories.each do |p_item| %>
+					<dt><%= p_item.name %></dt>
+						<% p_item.categories.each do |item| %>
+						<dd><%= link_to item.name, store_show_url(category_id: item.id), method: :post, remote: true %></dd>
+						<% end %>
+					<% end %>
+					</dl>
+				</div>
+				<% end %>
 			</div>
 			<div id="main" class="span8">
 				<%= yield %>
