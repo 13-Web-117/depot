@@ -26,6 +26,13 @@ es:
   products:
     product:
       add_html:   "A&ntilde;adir al Carrito"
+    index:
+      page_title:  "Lista de Productos"
+      page_subtitle:  "Administre sus productos aquí"
+      new_product:  "Nuevos productos"
+      show:  "Ver"
+      edit:  "Editar"
+      dele:  "Borrar"
       
   carts:
     cart:
@@ -48,11 +55,30 @@ es:
       new_order:    "Nuevo orden"
     form:
       name:         "Nombre"
-      address_html: "Direcci&oacute;n"
+      address_html: "Direcci&aacute;n"
       email:        "E-mail"
       pay_type:     "Forma de pago"
-      pay_prompt_html:  "Seleccione un m&eacute;todo de pagp"
+      pay_prompt_html:  "Seleccione un m&aacute;todo de pagp"
       submit:       "Realizar Pedido"
+    index:
+      page_title:     "Lista de pedidos"
+      page_subtitle:  "Aquí gestionar pedidos de clientes"
+      new_order:      "Nuevo orden"
+      name:           "Nombre"
+      address:        "Direccián"
+      email:          "E-mail"
+      pay_type:       "Forma de pago"
+      show:           "Ver"
+      edit:           "Editar"
+      destroy:        "Borrar"
+  
+  users:
+    index:
+      page_title:  "Listado de usuarioss"
+      name:  "Nombre"
+      show:  "Ver"
+      edit:  "Editar"
+      destroy:  "Borrar"
 
   activerecord:
     models:

@@ -85,13 +85,6 @@ en:
       pay_type:     "Pay With"
       pay_prompt_html:  "Select a payment method"
       submit:       "Place Order"
-    index:
-      page_title:  "Listing products"
-      page_subtitle:  "Manage your products."
-      new_product:  "New Product"
-      show:  "Show"
-      edit:  "Edit"
-      dele:  "Dele"
   
   user_cart:
     show_user_cart:

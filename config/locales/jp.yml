@@ -26,6 +26,13 @@ jp:
   products:
     product:
       add_html:   "カートに入れる"
+    index:
+      page_title:  "商品リスト"
+      page_subtitle:  "ここにあなたの製品を管理する"
+      new_product:  "新商品"
+      show:         "ビュー"
+      edit:         "編集"
+      destroy:      "削除"
       
   carts:
     cart:
@@ -53,6 +60,25 @@ jp:
       pay_type:     "ペイメント"
       pay_prompt_html:  "支払方法を選択してください"
       submit:       "受注"
+    index:
+      page_title:  "オーダーリスト"
+      page_subtitle:  "顧客のオーダーを管理する"
+      new_order:  "新しいオーダー"
+      name:  "名前"
+      address:  "アドレス"
+      email:  "電子メール"
+      pay_type:  "ペイメント"
+      show:  "ビュー"
+      edit:  "編集"
+      dele:  "削除"
+  
+  users:
+    index:
+      page_title:  "ユーザーリスト"
+      name:        "ユーザー名"
+      show:        "ビュー"
+      edit:        "編集"
+      destroy:     "削除"
   
   activerecord:
     models:
