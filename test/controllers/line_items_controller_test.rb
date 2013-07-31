@@ -3,6 +3,7 @@ require 'test_helper'
 class LineItemsControllerTest < ActionController::TestCase
   setup do
     @line_item = line_items(:one)
+    @request.env['HTTP_REFERER'] = 'http://test.host/user_cart/show_user_cart'
   end
 
   test "should get index" do
@@ -44,7 +45,8 @@ class LineItemsControllerTest < ActionController::TestCase
       delete :destroy, id: @line_item
     end
 
-    assert_redirected_to line_items_path
+    # assert_redirected_to line_items_path
+    assert_redirected_to :back
   end
   
   test "should create line_item via ajax" do

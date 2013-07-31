@@ -1,5 +1,5 @@
 class LineItemsController < ApplicationController
-  skip_before_filter :authorize, only: :create
+  skip_before_filter :authorize, only: [:create, :destroy]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
   # GET /line_items
@@ -60,8 +60,9 @@ class LineItemsController < ApplicationController
   def destroy
     @line_item.destroy
     respond_to do |format|
-      format.html { redirect_to line_items_url }
+      format.html { redirect_to :back }
       format.json { head :no_content }
+      format.js { @cart = current_cart }
     end
   end
 
@@ -75,4 +76,12 @@ class LineItemsController < ApplicationController
     def line_item_params
       params.require(:line_item).permit(:product_id, :cart_id)
     end
+    
+    # def set_current_cart
+      # if session[:user_id]
+        # @cart = User.find(session[:user_id]).get_user_cart
+      # else
+        # @cart = current_cart
+      # end
+    # end
 end
