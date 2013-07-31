@@ -42,9 +42,8 @@
 <%= submit_tag t(".update"),
 			   remote: true,
 			   class: "btn btn-primary"%>
-<%= button_to t('.checkout'), 
+<%= link_to t('.checkout'), 
 			  new_order_path, 
-			  method: :get, 
 			  class: "btn btn-primary" %>			   
 </div>
 <% end %>
