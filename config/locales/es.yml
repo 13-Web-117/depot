@@ -70,7 +70,7 @@ es:
   
   errors:
     template:
-      body:         "Hay problemas con los singuientes campos:"
+      body:         "Hay problemas con los siguientes campos:"
       header:
         one:        "1 error ha impedido que este %{model} se guarde"
         other:      "%{count} errores han impedido que este %{model} se guarde"

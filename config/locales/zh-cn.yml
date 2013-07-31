@@ -71,6 +71,27 @@ zh-cn:
       edit:  "编辑"
       destroy:  "删除"
 
+  activerecord:
+    models:
+      order:        "规则"
+    attributes:
+      order:
+        address:    "联系地址"
+        name:       "姓名"
+        email:      "联系邮箱"
+        pay_type:   "支付方式"
+    errors:
+      messages:
+        inclusion:  "没有从列表中选择"
+        blank:      "不能为空"
+  
+  errors:
+    template:
+      body:         "在以下字段中存在一个问题："
+      header:
+        one:        "1个错误阻止了这次请求"
+        other:      "%{count}个错误阻止了这次请求"
+
   user_cart:
     show_user_cart:
       page_title:        "您的购物车"
