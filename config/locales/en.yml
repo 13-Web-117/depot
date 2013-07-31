@@ -28,10 +28,18 @@ en:
       questions:  "Questions"
       news:       "News"
       contact:    "Contact"
+      login:      "Login"
+      register:   "Register"
+      search:     "Search"
+      language:   "Language"
   
   store:
     index:
       title_html: "Your Pragmatic Catalog"
+      add_html:   "Add to Cart"
+  
+  products:
+    product:
       add_html:   "Add to Cart"
       
   carts:

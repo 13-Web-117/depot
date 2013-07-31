@@ -14,7 +14,7 @@ Depot::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -37,6 +37,5 @@ Depot::Application.configure do
     user_name:      "rubyexample",
     password:       "195432870",
     enable_starttls_auto: true,
-    openssl_verify_mode: 'none'
   }
 end

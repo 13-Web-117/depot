@@ -1,31 +1,35 @@
 <h1>Listing products</h1>
+<p class="lead">Manage your products.<%= link_to 'New Product', new_product_path %></p>
 
 <table>
 <% @products.each do |product| %>
-	<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+	<tr class="well">
 		
-		<td>
-			<%= image_tag(product.image_url, class: 'list_image')%>
+		<td class="span2">
+			<%= image_tag(product.image_url, class: 'list_image thumbnail')%>
 		</td>
 		
 		<td class="list_description">
 			<dl>
 				<dt><%= product.title %></dt>
-				<dd><%= truncate(strip_tags(product.description), length: 80)%></dd>
+				<dd><%= truncate(strip_tags(product.description), length: 250)%></dd>
 			</dl>
 		</td>
 		
-		<td class="list_actions">
-			<%= link_to 'Show', product_path(product) %><br/>
-			<%= link_to 'Edit', edit_product_path(product) %><br/>
-			<%= link_to 'Destroy', product,
+		<td class="list_actions span1">
+			<p><%= link_to 'Show', product_path(product), class: "btn " %></p>
+			<p><%= link_to 'Edit', edit_product_path(product), class: "btn" %></p>
+			<p><%= link_to 'Dele', product,
 								confirm: 'Are you sure?',
-								method: :delete %>
+								method: :delete,
+								class: "btn btn-danger" %>
+			</p>
 		</td>
 	</tr>
 <% end %>
 </table>
 
-<br>
+<div>
+	<%= will_paginate @products, renderer: BootstrapPagination::Rails %>
+</div>
 
-<%= link_to 'New Product', new_product_path %>
