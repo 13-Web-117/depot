@@ -47,6 +47,17 @@ en:
   products:
     product:
       add_html:   "Add to Cart"
+    index:
+      page_title:  "Listing orders"
+      page_subtitle:  "Manage user orders."
+      new_order:  "New Order"
+      name:  "Name"
+      address:  "Address"
+      email:  "Email"
+      pay_type:  "Pay type"
+      show:  "Show"
+      edit:  "Edit"
+      destroy:  "Destroy"
       
   carts:
     cart:
@@ -73,18 +84,36 @@ en:
       pay_type:     "Pay With"
       pay_prompt_html:  "Select a payment method"
       submit:       "Place Order"
+    index:
+      page_title:  "Listing products"
+      page_subtitle:  "Manage your products."
+      new_product:  "New Product"
+      show:  "Show"
+      edit:  "Edit"
+      dele:  "Dele"
+  
+  user_cart:
+    show_user_cart:
+      page_title:        "Your Shopping Cart"
+      page_subtitle:     "You can edit your cart here."
+    user_cart:
+      title:             "Title"
+      price:             "Price"
+      quantity:          "Quantity"
+      total:             "Total"
+      operation:         "Operation"
+      dele:              "Dele"
+      update:            "Update"
+      empty:             "Empty Cart"
+      checkout:          "Checkout"
 
-#
-#  user_cart:
-#   _user_cart:
-#      title:  "Title"
-#      price  Price
-#      quantity  Quantity
-#      total  Total
-#      operation  Operation
-#      dele  Dele
-#      empty  Empty
-#      update  Update
+  users:
+    index:
+      page_title:  "Listing users"
+      name:  "Name"
+      show:  "Show"
+      edit:  "Edit"
+      destroy:  "Destroy"
 
   thanks:           "Thank you for your order"
 
@@ -106,19 +135,3 @@ en:
 #    health:  "Health"
 #    entertainment:  "Entertainment"
 #    fashion:  "Fashion"
-  
-  user_cart:
-    show_user_cart:
-      page_title:        "Your Shopping Cart"
-      page_subtitle:     "You can edit your cart here."
-    user_cart:
-      title:             "Title"
-      price:             "Price"
-      quantity:          "Quantity"
-      total:             "Total"
-      operation:         "Operation"
-      dele:              "Dele"
-      update:            "Update"
-      empty:             "Empty Cart"
-      checkout:          "Checkout"
-      
