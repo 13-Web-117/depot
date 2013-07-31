@@ -32,6 +32,12 @@ en:
       register:   "Register"
       search:     "Search"
       language:   "Language"
+      my_cart:  "My cart"
+      orders:  "Orders"
+      products:  "Products"
+      users:  "Users"
+      logout:  "Logout"
+      back_to_top:  "Back to top"
   
   store:
     index:
@@ -68,4 +74,35 @@ en:
       pay_prompt_html:  "Select a payment method"
       submit:       "Place Order"
 
+#
+#  user_cart:
+#   _user_cart:
+#      title:  "Title"
+#      price  Price
+#      quantity  Quantity
+#      total  Total
+#      operation  Operation
+#      dele  Dele
+#      empty  Empty
+#      update  Update
+
   thanks:           "Thank you for your order"
+
+#  seeds:
+#    literature:  "Literature"
+#    management:  "Management"
+#    technology:  "Technology"
+#    life:  "Life"
+#    fiction: "Fiction"
+#    youth:  "Youth"
+#    legend:  "Legend"
+#    economy:  "Economy"
+#    investment:  "Investment"
+#    finance: "Finance"
+#    building:  "Building"
+#    programming:  "Programming"
+#    physics:  "Physics"
+#    chemistry:  "Chemistry"
+#    health:  "Health"
+#    entertainment:  "Entertainment"
+#    fashion:  "Fashion"
