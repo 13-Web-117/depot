@@ -3,13 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .store {
-  // h1 {
-    // margin: 0;
-    // padding-bottom: 0.5em;
-    // font: 150% sans-serif;
-    // color: #226;
-    // border-bottom: 3px dotted #77d;
-  // }
+  #my-carousel {
+    h1, p {
+      color: #e3e3e3; 
+      text-shadow: black 1px 1px 1px; 
+    }
+    
+    p {
+      font-style: italic;
+    }
+    
+    img {
+      height: 240px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    .hero-unit {
+      height: 180px;
+      margin: 0px;
+    }
+    
+    #item1 {
+      background-image: url("indigo.jpg");
+    }
+    
+    #item2 {
+      background-image: url("aqua.jpg");
+    }
+    
+    #item3 {
+      background-image: url("color-splash.jpg");
+    }
+    
+    .carousel-control {
+      margin: 15px;
+    }
+  }
   
   /* An entry in the store catalog */
   .entry {

@@ -56,7 +56,7 @@ class CartsController < ApplicationController
       if @cart.update(cart_params)
         format.html { redirect_to :back }
         format.json { head :no_content }
-        format.js { @cart = current_cart }
+        format.js { @user_cart = current_cart }
       else
         format.html { redirect_to :back }
         format.json { render json: @cart.errors, status: :unprocessable_entity }
@@ -74,7 +74,7 @@ class CartsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to store_url }
       format.json { head :no_content }
-      format.js { @cart = current_cart }
+      format.js { @user_cart = current_cart }
     end
   end
 

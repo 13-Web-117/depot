@@ -16,7 +16,7 @@
 					<div class="nav-collapse collapse" id="main-menu">
 						<ul class="nav" id="main-menu-left">
 							<li>
-								<a href=""><%= t('.questions') %></a>
+								<a href="/"><%= t('.home') %></a>
 							</li>
 							<li>
 								<a href=""><%= t('.news') %></a>
@@ -35,14 +35,18 @@
 								</ul>
 							</li>
 						</ul>
-						<form class="navbar-search pull-left" action="">
-							<input type="text" class="search-query span2" placeholder="<%= t('.search')%>" />
-						</form>
+
+						<% if controller.controller_name == 'store' %>
+							<%= form_tag '/store/search', class: "navbar-search pull-left", remote: true do %>
+								<%= text_field_tag :title, nil, placeholder: t('.search'), class: "search-query span2" %>
+							<% end %>
+						<% end %>
+
 						<ul class="nav pull-right" id="main-menu-right">
 							<% if session[:user_id] %>
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <%= session[:user_name] %> <b class="caret"></b> </a>
-								
+
 								<ul class="dropdown-menu">
 									<li>
 										<% if @cart %>
@@ -92,12 +96,16 @@
 				<div class="well" id="category">
 					<h2>Product Categories</h2>
 					<dl>
-					<% @parent_categories.each do |p_item| %>
-					<dt><%= p_item.name %></dt>
+						<% @parent_categories.each do |p_item| %>
+						<dt>
+							<%= p_item.name %>
+						</dt>
 						<% p_item.categories.each do |item| %>
-						<dd><%= link_to item.name, store_show_url(category_id: item.id), method: :post, remote: true %></dd>
+						<dd>
+							<%= link_to item.name, store_show_url(category_id: item.id), method: :post, remote: true %>
+						</dd>
 						<% end %>
-					<% end %>
+						<% end %>
 					</dl>
 				</div>
 				<% end %>
