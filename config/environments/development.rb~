@@ -36,6 +36,6 @@ Depot::Application.configure do
     authentication: "plain",
     user_name:      "rubyexample",
     password:       "195432870",
-    enable_starttls_auto: true,
+    enable_starttls_auto: true
   }
 end

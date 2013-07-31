@@ -1,9 +1,17 @@
-<h1>Welcome</h1>
-
-<div class="well" >
-	<% if session[:user_permission] == 1 %>
-	You're an <strong>administrator</strong>. We have <%= pluralize(@total_orders, "order") %>.
-	<% else %>
-	Welcome, <strong>buyer</strong> <%= session[:user_name] %>. Enjoy your shopping trip!
-	<% end %>
-</div>
+<html>
+	<head> 
+		<meta http-equiv="Content-Language" content="zh-CN"> 
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312"> 
+		<meta http-equiv="refresh" content="1; url=http://localhost:3000/welcome"> 
+		<title>Welcome</title>
+	</head> 
+	<body> 
+		<style type="text/css">
+		body {background-image: url(http://www.dabaoku.com/gif/biaoshi/051/022v.gif);
+		      background-position: 98% 95px;
+		      background-repeat: no-repeat;
+		      background-size: 940px;
+		      background-attachment: fixed;}
+		</style>
+	</body> 
+</html>

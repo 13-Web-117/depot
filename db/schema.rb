@@ -11,17 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130729065134) do
+ActiveRecord::Schema.define(version: 20130716023351) do
 
   create_table "carts", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-  end
-
-  create_table "categories", force: true do |t|
-    t.string   "name"
-    t.integer  "parent_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,12 +36,6 @@ ActiveRecord::Schema.define(version: 20130729065134) do
     t.datetime "updated_at"
   end
 
-  create_table "parent_categories", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "products", force: true do |t|
     t.string   "title"
     t.text     "description"
@@ -57,7 +43,6 @@ ActiveRecord::Schema.define(version: 20130729065134) do
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "category_id"
   end
 
   create_table "users", force: true do |t|
@@ -65,7 +50,6 @@ ActiveRecord::Schema.define(version: 20130729065134) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "permission",      default: 1
   end
 
 end

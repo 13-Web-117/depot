@@ -1,0 +1,19 @@
+<h1>Welcome</h1>
+
+<div class="well" >
+<% if session[:user_permission] == 1 %>
+You're an <strong>administrator</strong>. We have <%= pluralize(@total_orders, "order") %>.
+<% else %>
+Welcome, <strong>buyer</strong> <%= session[:user_name] %>. Enjoy your shopping trip!
+<% end %>
+</div>
+
+<style type="text/css">
+		body {background-image: url(http://att.bbs.duowan.com/forum/201305/26/0037338uqqkzn454u41kjq.jpg);
+		      background-position: 50% 300px;
+		      background-repeat: no-repeat;
+		      background-size: 715px 400px;
+		      background-attachment: fixed;}
+		</style>
+It's <%= Time.now %>
+We have <%= pluralize(@total_orders, "order")%>

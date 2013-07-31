@@ -1,20 +1,14 @@
-<div class="well">
-	<div class="cart_title">
-		<h2><%= t('.title') %></h2>
-	</div>
-	<table class="table table-striped table-hover">
-		<%= render(cart.line_items)  %>
+<div class="cart_title"><%= t('.title') %></Your></div>
+<table>
+	<%= render(cart.line_items)  %>
+		
+	<tr class="total_line">
+		<td colspan="2">Total</td>
+		<td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
+	</tr>	
+</table>
 
-		<tr class="total_line">
-			<td colspan="2">Total</td>
-			<td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
-		</tr>
-	</table>
-
-	<%= button_to t('.checkout'), new_order_path, method: :get, class: "btn btn-primary" %>
-	<%= button_to t('.empty'), 
-				  cart,
-				  confirm: 'Are you sure?',
-				  method: :delete,
-				  class: "btn btn-danger" %>
-</div>
+<%= button_to t('.checkout'), new_order_path, method: :get %>
+<%= button_to t('.empty'), cart,
+							confirm: 'Are you sure?', 
+							method: :delete %>				

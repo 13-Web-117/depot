@@ -8,27 +8,26 @@
   }
 
   table tr td {
-    padding: 10px;
+    padding: 5px;
     vertical-align: top;
   }
 
   .list_image {
-    width: 90px;
-    height: 110px;
+    width: 60px;
+    height: 70px;
   }
 
   .list_description {
-    // width: 60%;
+    width: 60%;
 
     dl {
       margin: 0;
     }
 
     dt {
-      color: #317eac;
+      color: #244;
       font-weight: bold;
       font-size: larger;
-      margin-bottom: 5px;
     }
 
     dd {
@@ -42,11 +41,11 @@
     padding-left: 1em;
   }
 
-  // .list_line_even {
-    // background: #e0f8f8;
-  // }
-// 
-  // .list_line_odd {
-    // background: #f8b0f8;
-  // }
+  .list_line_even {
+    background: #e0f8f8;
+  }
+
+  .list_line_odd {
+    background: #f8b0f8;
+  }
 }

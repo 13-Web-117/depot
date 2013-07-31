@@ -3,7 +3,6 @@ require 'test_helper'
 class CartsControllerTest < ActionController::TestCase
   setup do
     @cart = carts(:one)
-    @request.env['HTTP_REFERER'] = 'http://test.host/user_cart/show_user_cart'
   end
 
   test "should get index" do
@@ -37,8 +36,7 @@ class CartsControllerTest < ActionController::TestCase
 
   test "should update cart" do
     patch :update, id: @cart, cart: {  }
-    # assert_redirected_to cart_path(assigns(:cart))
-    assert_redirected_to :back
+    assert_redirected_to cart_path(assigns(:cart))
   end
 
   test "should destroy cart" do

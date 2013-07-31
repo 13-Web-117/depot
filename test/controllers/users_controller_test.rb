@@ -4,8 +4,7 @@ class UsersControllerTest < ActionController::TestCase
   setup do
     @test_user = { name:                  "sam",
                    password:              "private",
-                   password_confirmation: "private",
-                   permission:            "1"
+                   password_confirmation: "private"
                  }
                  
     @user = users(:one)
@@ -27,7 +26,7 @@ class UsersControllerTest < ActionController::TestCase
       post :create, user: @test_user
     end
 
-    assert_redirected_to login_path
+    assert_redirected_to users_path
   end
 
   test "should show user" do

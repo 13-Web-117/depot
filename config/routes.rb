@@ -1,6 +1,5 @@
 Depot::Application.routes.draw do
-
-  get "user_cart/show_user_cart"
+  get 'welcome' => 'welcome#index'
   get 'admin' => 'admin#index'
   
   controller :sessions do
@@ -14,14 +13,11 @@ Depot::Application.routes.draw do
     resources :orders
     resources :line_items
     resources :carts
-    resources :categories
-    resources :parent_categories
     resources :products do
       get :who_bought, on: :member
     end 
     root to: 'store#index', as: 'store'
     post '/' => 'store#index'
-    post '/store/show' => 'store#show'
   end
 
   # get "store/index"
