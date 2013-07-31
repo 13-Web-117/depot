@@ -1,5 +1,6 @@
-<h1>Listing products</h1>
-<p class="lead">Manage your products.<%= link_to 'New Product', new_product_path %></p>
+<h1><%= t('.page_title') %></h1>
+<p class="lead"><%= t('.page_subtitle') %></p>
+<p class="lead"><%= link_to t('.new_product'), new_product_path %></p>
 
 <table>
 <% @products.each do |product| %>
@@ -17,9 +18,9 @@
 		</td>
 		
 		<td class="list_actions span1">
-			<p><%= link_to 'Show', product_path(product), class: "btn " %></p>
-			<p><%= link_to 'Edit', edit_product_path(product), class: "btn" %></p>
-			<p><%= link_to 'Dele', product,
+			<p><%= link_to t('.show'), product_path(product), class: "btn " %></p>
+			<p><%= link_to t('.edit'), edit_product_path(product), class: "btn" %></p>
+			<p><%= link_to t('.dele'), product,
 								confirm: 'Are you sure?',
 								method: :delete,
 								class: "btn btn-danger" %>
