@@ -21,11 +21,11 @@ zh-cn:
   store:
     index:
       title_html:  "书籍目录"
-      add_html:  "添加到购物车"
+      add_html:  "加入购物车"
       
   products:
     product:
-      add_html:  "添加到购物车"
+      add_html:  "加入购物车"
     index:
       page_title:  "商品列表"
       page_subtitle:  "在这里管理您的商品."
@@ -52,6 +52,10 @@ zh-cn:
   orders:
     new:
       legend:       "请输入你的详细信息"
+      new_order:    "新的订单"
+    edit:
+      legend:       "请输入你的详细信息"
+      edit_order:    "编辑订单"
     form:
       name:         "姓名"
       address_html:  "联系地址"

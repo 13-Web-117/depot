@@ -53,6 +53,9 @@ es:
     new:
       legend:       "Por favor, introduzca sus datos"
       new_order:    "Nuevo orden"
+    edit:
+      legend:       "Por favor, introduzca sus datos"
+      edit_order:   "Editar orden"
     form:
       name:         "Nombre"
       address_html: "Direcci&aacute;n"

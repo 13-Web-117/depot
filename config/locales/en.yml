@@ -74,6 +74,9 @@ en:
     new:
       legend:       "Please Enter Your Details"
       new_order:    "New order"
+    edit:
+      legend:       "Please Enter Your Details"
+      edit_order:    "Edit order"
     form:
       name:         "Name"
       address_html: "Address"

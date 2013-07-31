@@ -53,6 +53,9 @@ jp:
     new:
       legend:       "あなたの詳細を入力してください"
       new_order:    "新しいオーダー"
+    edit:
+      legend:       "あなたの詳細を入力してください"
+      edit_order:    "編集オーダー"
     form:
       name:         "名前"
       address_html: "アドレス"
