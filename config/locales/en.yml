@@ -29,15 +29,15 @@ en:
       news:       "News"
       contact:    "Contact"
       login:      "Login"
-      logout:     "Logout"
       register:   "Register"
       search:     "Search"
-      language:   "Language"
-      my_cart:    "My Cart"
-      orders:     "Orders"
-      products:   "Products"
-      users:      "Users"
-      back_to_top: "Back to top"
+      language:  "Language"
+      my_cart:  "My cart"
+      orders:  "Orders"
+      products:  "Products"
+      users:  "Users"
+      logout:  "Logout"
+      back_to_top:  "Back to top"
   
   store:
     index:
@@ -47,6 +47,17 @@ en:
   products:
     product:
       add_html:   "Add to Cart"
+    index:
+      page_title:  "Listing orders"
+      page_subtitle:  "Manage user orders."
+      new_order:  "New Order"
+      name:  "Name"
+      address:  "Address"
+      email:  "Email"
+      pay_type:  "Pay type"
+      show:  "Show"
+      edit:  "Edit"
+      destroy:  "Destroy"
       
   carts:
     cart:
@@ -74,8 +85,13 @@ en:
       pay_type:     "Pay With"
       pay_prompt_html:  "Select a payment method"
       submit:       "Place Order"
-
-  thanks:           "Thank you for your order"
+    index:
+      page_title:  "Listing products"
+      page_subtitle:  "Manage your products."
+      new_product:  "New Product"
+      show:  "Show"
+      edit:  "Edit"
+      dele:  "Dele"
   
   user_cart:
     show_user_cart:
@@ -91,4 +107,32 @@ en:
       update:            "Update"
       empty:             "Empty Cart"
       checkout:          "Checkout"
-      
+
+  users:
+    index:
+      page_title:  "Listing users"
+      name:  "Name"
+      show:  "Show"
+      edit:  "Edit"
+      destroy:  "Destroy"
+
+  thanks:           "Thank you for your order"
+
+#  seeds:
+#    literature:  "Literature"
+#    management:  "Management"
+#    technology:  "Technology"
+#    life:  "Life"
+#    fiction: "Fiction"
+#    youth:  "Youth"
+#    legend:  "Legend"
+#    economy:  "Economy"
+#    investment:  "Investment"
+#    finance: "Finance"
+#    building:  "Building"
+#    programming:  "Programming"
+#    physics:  "Physics"
+#    chemistry:  "Chemistry"
+#    health:  "Health"
+#    entertainment:  "Entertainment"
+#    fashion:  "Fashion"
