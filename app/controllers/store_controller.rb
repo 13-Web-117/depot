@@ -10,17 +10,17 @@ class StoreController < ApplicationController
                                    per_page: 4
       @cart = current_cart
       @parent_categories = ParentCategory.all
+      @item1 = Product.last
+      @item2 = Product.order('id desc').offset(1).first
+      @item3 = Product.order('id desc').offset(2).first
     end
   end
   
   def show
     @products = Product.where(category_id: params[:category_id])
-    @cart = current_cart
-    @parent_categories = ParentCategory.all
-    respond_to do |format|
-      format.html { render action: 'index' }
-      format.json { "json" }
-      format.js
-    end
+  end
+  
+  def search
+    @products = Product.search(params[:title])
   end
 end

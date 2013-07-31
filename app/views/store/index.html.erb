@@ -12,27 +12,42 @@
 
 <h1><%= t('.title_html') %></h1>
 <!-- <p class="lead">
-	Find your books here.
+Find your books here.
 </p> -->
 
-<div id="my-carousel" class="well carousel slide" data-interval="1000">
+<div id="my-carousel" class="well carousel slide" >
 	<div class="carousel-inner">
 		<div class="item active">
-			<%= image_tag("indigo.jpg") %>
-			<div class="carousel-caption">
-				<h4>Bootstrap v1.0.0</h4>
+			<div id="item1" class="hero-unit row-fluid">
+				<div class="span6">
+					<h1><%= truncate(@item1.title, length:25) %></h1>
+					<p>
+						<%= truncate(strip_tags(@item1.description), length: 50)%>
+					</p>
+				</div>
+				<%= image_tag @item1.image_url, class: "span3" %>
 			</div>
 		</div>
 		<div class="item">
-			<%= image_tag("aqua.jpg") %>
-			<div class="carousel-caption">
-				<h4>Bootstrap v1.0.0</h4>
+			<div id="item2" class="hero-unit row-fluid">
+				<%= image_tag @item2.image_url, class: "span3" %>
+				<div class="span6">
+					<h1><%= truncate(@item2.title, length:25) %></h1>
+					<p>
+						<%= truncate(strip_tags(@item2.description), length: 50)%>
+					</p>
+				</div>
 			</div>
 		</div>
 		<div class="item">
-			<%= image_tag("color-splash.jpg")%>
-			<div class="carousel-caption">
-				<h4>Bootstrap v1.0.0</h4>
+			<div id="item3" class="hero-unit row-fluid">
+				<div class="span6">
+					<h1><%= truncate(@item3.title, length:25) %></h1>
+					<p>
+						<%= truncate(strip_tags(@item3.description), length: 50)%>
+					</p>
+				</div>
+				<%= image_tag @item3.image_url, class: "span3" %>
 			</div>
 		</div>
 	</div>

@@ -22,6 +22,7 @@ Depot::Application.routes.draw do
     root to: 'store#index', as: 'store'
     post '/' => 'store#index'
     post '/store/show' => 'store#show'
+    post '/store/search' => 'store#search'
   end
 
   # get "store/index"
