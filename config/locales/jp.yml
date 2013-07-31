@@ -2,46 +2,41 @@ jp:
   
   layouts:
     application:
-      title:      "Pragmatic Bookshelf"
-      home:       "Home"
-      questions:  "Questions"
-      news:       "News"
-      contact:    "Contact"
-      login:      "Login"
-      logout:     "Logout"
-      register:   "Register"
-      search:     "Search"
-      language:   "Language"
-      my_cart:    "My Cart"
-      orders:     "Orders"
-      products:   "Products"
-      users:      "Users"
+      title:      "これは本屋です"
+      home:       "ホーム"
+      questions:  "質問"
+      news:       "ニュース"
+      contact:    "連絡"
+      login:      "登録"
+      logout:     "ログアウト"
+      register:   "レジスター"
+      search:     "検索"
+      language:   "言語"
+      my_cart:    "ショッピングカート"
+      orders:     "オーダー"
+      products:   "製品"
+      users:      "ユーザー"
+      back_to_top: "トップ"
   
   store:
     index:
-      title_html: "Your Pragmatic Catalog"
-      add_html:   "Add to Cart"
+      title_html: "ブックリスト"
+      add_html:   "カートに入れる"
   
   products:
     product:
-      add_html:   "Add to Cart"
+      add_html:   "カートに入れる"
       
   carts:
     cart:
-      title:      "Your Cart"
-      empty:      "Empty Cart"
-      checkout:   "Checkout"
-  
-  user_cart:
-    user_cart:
-      update:     "Update"
-      empty:      "Empty Cart"
-      checkout:   "Checkout"
+      title:      "あなたのカート"
+      empty:      "クリア"
+      checkout:   "チェックアウト"
       
   number:
     currency:
       format:
-        unit :      "$"
+        unit :      "¥"
         precision:  2
         separator:  "."
         delimiter:  ","
@@ -49,13 +44,51 @@ jp:
         
   orders:
     new:
-      legend:       "Please Enter Your Details"
+      legend:       "あなたの詳細を入力してください"
+      new_order:    "新しいオーダー"
     form:
-      name:         "Name"
-      address_html: "Address"
-      email:        "E-mail"
-      pay_type:     "Pay With"
-      pay_prompt_html:  "Select a payment method"
-      submit:       "Place Order"
+      name:         "名前"
+      address_html: "アドレス"
+      email:        "電子メール"
+      pay_type:     "ペイメント"
+      pay_prompt_html:  "支払方法を選択してください"
+      submit:       "受注"
+  
+  activerecord:
+    models:
+      order:        "オーダー"
+    attributes:
+      order:
+        address:    "アドレス"
+        name:       "名前"
+        email:      "電子メール"
+        pay_type:   "ペイメント"
+    errors:
+      messages:
+        inclusion:  "リストに含まれていない"
+        blank:      "空白にすることはできません"
+  
+  errors:
+    template:
+      body:         "次のフィールドに問題があります:"
+      header:
+        one:        "1 エラーは、この要求が保存される妨げている。"
+        other:      "%{count} エラーは、この要求が保存される妨げている。"
 
-  thanks:           "Thank you for your order"
+  thanks:           "ご注文いただき、ありがとうございます"
+  
+  user_cart:
+    show_user_cart:
+      page_title:        "あなたのショッピングカート"
+      page_subtitle:     "ここのカートを編集することができます。"
+    user_cart:
+      title:             "タイトル"
+      price:             "プライス"
+      quantity:          "数量"
+      total:             "合計"
+      operation:         "操作"
+      dele:              "削除"
+      update:            "更新"
+      empty:             "クリア"
+      checkout:          "チェックアウト"
+      
