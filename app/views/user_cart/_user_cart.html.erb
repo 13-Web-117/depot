@@ -2,11 +2,11 @@
 <table class="table table-bordered table-striped table-hover">
 	<thead>
 		<tr>
-			<th>Title</th>
-			<th>Price</th>
-			<th>Quantity</th>
-			<th>Total</th>
-			<th>Operation</th>
+			<th><%= t('.title') %></th>
+			<th><%= t('.price') %></th>
+			<th><%= t('.quantity') %></th>
+			<th><%= t('.total') %></th>
+			<th><%= t('.operation') %></th>
 		</tr>
 	</thead>
 
@@ -19,7 +19,7 @@
 				<td><%= item_form.text_field :quantity, class: "input-small" %></td>
 				<td><%= number_to_currency(item.total_price) %></td>
 				<td>
-					<%= link_to "Dele", 
+					<%= link_to t('.dele'), 
 								line_item_url(item),
 								method: :delete,
 								confirm: 'Are you sure?',

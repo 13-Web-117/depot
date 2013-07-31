@@ -8,9 +8,15 @@ es:
       news:       "Noticias"
       contact:    "Contacto"
       login:      "Iniciar la sesión"
+      logout:     "Salir"
       register:   "Registro"
       search:     "Buscar"
       language:   "Idioma"
+      my_cart:    "Mi Cesta"
+      orders:     "Pedidos"
+      products:   "Productos"
+      users:      "Usuarios"
+      back_to_top: "Volver arriba"
       
   store:
     index:
@@ -27,12 +33,6 @@ es:
       empty:      "Vaciar Carrito"
       checkout:   "Comprar"
   
-  user_cart:
-    user_cart:
-      update:     "Actualizar"
-      empty:      "Vaciar Carrito"
-      checkout:   "Comprar"
-      
   number:
     currency:
       format:
@@ -75,3 +75,18 @@ es:
         other:      "%{count} errores han impedido que este %{model} se quarde"
 
   thanks:           "Gracias por su pedido"
+
+  user_cart:
+    show_user_cart:
+      page_title:        "Tu Carrito de Compras"
+      page_subtitle:     "Usted puede editar su cesta aquí."
+    user_cart:
+      title:             "Título"
+      price:             "Precio"
+      quantity:          "Cantidad"
+      total:             "Total"
+      operation:         "Operación"
+      dele:              "Borrar"
+      update:            "Actualizar"
+      empty:             "Vaciar Carrito"
+      checkout:          "Comprar"
