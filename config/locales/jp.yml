@@ -2,7 +2,7 @@ jp:
   
   layouts:
     application:
-      title:      "これは本屋です"
+      title:      "ネット書店"
       home:       "ホーム"
       questions:  "質問"
       news:       "ニュース"
@@ -28,11 +28,11 @@ jp:
       add_html:   "カートに入れる"
     index:
       page_title:  "商品リスト"
-      page_subtitle:  "ここにあなたの製品を管理する"
+      page_subtitle:  "ここにあなたの製品を管理する."
       new_product:  "新商品"
       show:         "ビュー"
       edit:         "編集"
-      destroy:      "削除"
+      dele:      "削除"
       
   carts:
     cart:
@@ -62,7 +62,7 @@ jp:
       submit:       "受注"
     index:
       page_title:  "オーダーリスト"
-      page_subtitle:  "顧客のオーダーを管理する"
+      page_subtitle:  "顧客のオーダーを管理する."
       new_order:  "新しいオーダー"
       name:  "名前"
       address:  "アドレス"
@@ -70,7 +70,7 @@ jp:
       pay_type:  "ペイメント"
       show:  "ビュー"
       edit:  "編集"
-      dele:  "削除"
+      destroy:  "削除"
   
   users:
     index:

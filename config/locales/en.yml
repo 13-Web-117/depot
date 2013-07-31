@@ -48,13 +48,9 @@ en:
     product:
       add_html:   "Add to Cart"
     index:
-      page_title:  "Listing orders"
-      page_subtitle:  "Manage user orders."
-      new_order:  "New Order"
-      name:  "Name"
-      address:  "Address"
-      email:  "Email"
-      pay_type:  "Pay type"
+      page_title:  "Listing products"
+      page_subtitle:  "Manage products here."
+      new_order:  "New product"
       show:  "Show"
       edit:  "Edit"
       destroy:  "Destroy"
@@ -85,6 +81,17 @@ en:
       pay_type:     "Pay With"
       pay_prompt_html:  "Select a payment method"
       submit:       "Place Order"
+    index:
+      page_title:     "Listing Orders"
+      page_subtitle:  "Manage all the user orders here."
+      new_order:      "New order"
+      name:           "Name"
+      address:        "Address"
+      email:          "Email"
+      pay_type:       "Pay type"
+      show:           "Show"
+      edit:           "Edit"
+      destroy:        "Dele"
   
   user_cart:
     show_user_cart:
@@ -103,11 +110,11 @@ en:
 
   users:
     index:
-      page_title:  "Listing users"
-      name:  "Name"
-      show:  "Show"
-      edit:  "Edit"
-      destroy:  "Destroy"
+      page_title:   "Listing users"
+      name:         "Name"
+      show:         "Show"
+      edit:         "Edit"
+      destroy:      "Destroy"
 
   thanks:           "Thank you for your order"
 

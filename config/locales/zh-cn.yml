@@ -28,7 +28,7 @@ zh-cn:
       add_html:  "添加到购物车"
     index:
       page_title:  "商品列表"
-      page_subtitle:  "管理商品"
+      page_subtitle:  "在这里管理您的商品."
       new_product:  "创建新的商品"
       show:  "查看"
       edit:  "编辑"
@@ -53,7 +53,7 @@ zh-cn:
     new:
       legend:       "请输入你的详细信息"
     form:
-      name:  "姓名"
+      name:         "姓名"
       address_html:  "联系地址"
       email:  "联系邮箱"
       pay_type:  "支付方式"
@@ -61,7 +61,7 @@ zh-cn:
       submit:       "提交订单"
     index:
       page_title:  "订单列表"
-      page_subtitle:  "管理用户订单"
+      page_subtitle:  "在这里管理用户订单."
       new_order:  "创建新的订单"
       name:  "姓名"
       address:  "联系地址"
