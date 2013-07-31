@@ -29,9 +29,15 @@ en:
       news:       "News"
       contact:    "Contact"
       login:      "Login"
+      logout:     "Logout"
       register:   "Register"
       search:     "Search"
       language:   "Language"
+      my_cart:    "My Cart"
+      orders:     "Orders"
+      products:   "Products"
+      users:      "Users"
+      back_to_top: "Back to top"
   
   store:
     index:
@@ -45,12 +51,6 @@ en:
   carts:
     cart:
       title:      "Your Cart"
-      empty:      "Empty Cart"
-      checkout:   "Checkout"
-  
-  user_cart:
-    user_cart:
-      update:     "Update"
       empty:      "Empty Cart"
       checkout:   "Checkout"
       
@@ -75,3 +75,19 @@ en:
       submit:       "Place Order"
 
   thanks:           "Thank you for your order"
+  
+  user_cart:
+    show_user_cart:
+      page_title:        "Your Shopping Cart"
+      page_subtitle:     "You can edit your cart here."
+    user_cart:
+      title:             "Title"
+      price:             "Price"
+      quantity:          "Quantity"
+      total:             "Total"
+      operation:         "Operation"
+      dele:              "Dele"
+      update:            "Update"
+      empty:             "Empty Cart"
+      checkout:          "Checkout"
+      
