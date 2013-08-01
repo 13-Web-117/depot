@@ -41,12 +41,42 @@
     text-align: right;
     padding-left: 1em;
   }
-
-  // .list_line_even {
-    // background: #e0f8f8;
-  // }
-// 
-  // .list_line_odd {
-    // background: #f8b0f8;
-  // }
+  
+  #book_info {
+  
+    img {
+      width: 90px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      position: absolute;
+    }
+    
+    h3 {
+      font-size: 120%;
+      margin-left: 120px;
+      margin-top: 0;
+      margin-bottom: 2px;
+    }
+    
+    p, div.price_line {
+      margin-left: 120px;
+      margin-top: 0.5em;
+      margin-bottom: 0.8em;
+      
+      form, div {
+        display: inline;
+      }
+    }
+    
+    .price {
+      color: #44a;
+      font-weight: bold;
+      margin-right: 3em;
+    }
+    
+    .btn {
+      display: none;
+    }
+  }
 }

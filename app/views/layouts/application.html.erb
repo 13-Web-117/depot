@@ -16,7 +16,7 @@
 					<div class="nav-collapse collapse" id="main-menu">
 						<ul class="nav" id="main-menu-left">
 							<li>
-								<a href="/"><%= t('.home') %></a>
+								<%= link_to t('.home'), store_url %>
 							</li>
 							<li>
 								<a href=""><%= t('.news') %></a>
@@ -120,6 +120,11 @@
 					Made by 13-web-117.
 				</footer>
 			</div>
+		</div>
+		<div id="back_to_top">
+			<a href="#top">
+				<%= image_tag("backtop1.png", alt: "Back to Top", title: t('.back_to_top')) %>
+			</a>
 		</div>
 
 	</body>
