@@ -18,9 +18,15 @@ class StoreController < ApplicationController
   
   def show
     @products = Product.where(category_id: params[:category_id])
+    respond_to do |format|
+      format.js { render action: 'book_result.js.erb' }
+    end
   end
   
   def search
     @products = Product.search(params[:title])
+    respond_to do |format|
+      format.js { render action: 'book_result.js.erb' }
+    end
   end
 end
