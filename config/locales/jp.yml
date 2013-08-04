@@ -39,6 +39,7 @@ jp:
       title:      "あなたのカート"
       empty:      "クリア"
       checkout:   "チェックアウト"
+      view_cart:  "カートを見る"
       
   number:
     currency:

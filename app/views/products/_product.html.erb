@@ -1,5 +1,5 @@
 <div class="entry bsa well">
-	<%= image_tag(product.image_url, class: "thumbnail") %>
+	<%= image_tag(product.image_url, class: "thumbnail book_img") %>
 	<h3 class="item_name"><%= product.title %></h3>
 	<p>
 		<%= sanitize(product.description) %>
@@ -9,6 +9,6 @@
 		<%= button_to t('.add_html'),
 			line_items_path(product_id: product),
 			remote: true,
-			class: "btn btn-primary" %>
+			class: "btn btn-primary add_btn" %>
 	</div>
 </div>

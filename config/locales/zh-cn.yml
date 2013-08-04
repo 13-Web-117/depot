@@ -39,6 +39,7 @@ zh-cn:
       title:  "你的购物车信息"
       empty:  "清空购物车"
       checkout:  "结账"
+      view_cart:  "查看购物车"
       
   number:
     currency:
