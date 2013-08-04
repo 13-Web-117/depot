@@ -1,4 +1,4 @@
-<%= form_for user_cart, url: cart_url(user_cart), method: :put do |f| %>
+<%= form_for user_cart, url: cart_url(user_cart), remote: true, method: :put do |f| %>
 <table class="table table-bordered table-striped table-hover">
 	<thead>
 		<tr>
@@ -40,7 +40,6 @@
 			 remote: true,
 			 class: "btn btn-danger" %>
 <%= submit_tag t(".update"),
-			   remote: true,
 			   class: "btn btn-primary"%>
 <%= link_to t('.checkout'), 
 			  new_order_path, 
