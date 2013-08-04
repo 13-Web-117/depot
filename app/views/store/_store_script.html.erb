@@ -9,5 +9,9 @@ $(function() {
 	});
 	
 	$('#my-carousel').carousel();
+			
+	$('#back_to_top').click(function() {
+		$('body').animate({scrollTop: 0}, 200);
+	})
 })
 </script>

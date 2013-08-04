@@ -5,6 +5,18 @@
 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
+		<script>
+			$(function() {
+				$('body').css("display", "none");
+				
+				$('body').fadeIn(700);
+				
+				$('#back_to_top').click(function() {
+					$('body').animate({scrollTop: 0}, 200);
+				})
+			})
+		</script>
+		
 	</head>
 	<body class='<%= controller.controller_name %>'>
 
@@ -114,17 +126,12 @@
 				<%= yield %>
 				<hr>
 				<footer id="footer">
-					<p class="pull-right">
-						<a href="#top"><%= t('.back_to_top') %></a>
-					</p>
 					Made by 13-web-117.
 				</footer>
 			</div>
 		</div>
 		<div id="back_to_top">
-			<a href="#top">
-				<%= image_tag("backtop1.png", alt: "Back to Top", title: t('.back_to_top')) %>
-			</a>
+			<%= image_tag("backtop1.png", alt: "Back to Top", title: t('.back_to_top')) %>
 		</div>
 
 	</body>

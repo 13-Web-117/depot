@@ -25,15 +25,15 @@
     }
     
     #item1 {
-      background-image: url("indigo.jpg");
+      background-image: asset-url("indigo.jpg");
     }
     
     #item2 {
-      background-image: url("aqua.jpg");
+      background-image: asset-url("aqua.jpg");
     }
     
     #item3 {
-      background-image: url("color-splash.jpg");
+      background-image: asset-url("color-splash.jpg");
     }
     
     .carousel-control {
