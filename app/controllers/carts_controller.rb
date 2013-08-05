@@ -60,7 +60,8 @@ class CartsController < ApplicationController
       else
         format.html { redirect_to :back }
         format.json { render json: @cart.errors, status: :unprocessable_entity }
-        format.js {}
+        format.js { @user_cart = current_cart
+                    @error = @cart.errors }
       end
     end
   end

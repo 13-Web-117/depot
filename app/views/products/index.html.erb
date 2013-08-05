@@ -1,9 +1,9 @@
 <h1><%= t('.page_title') %></h1>
 <p class="lead"><%= t('.page_subtitle') %> <%= link_to t('.new_product'), new_product_path, class: "btn btn-primary" %></p>
 
-<table>
+<table class="blur">
 <% @products.each do |product| %>
-	<tr class="well">
+	<tr>
 		
 		<td class="span2">
 			<%= image_tag(product.image_url, class: 'list_image thumbnail')%>

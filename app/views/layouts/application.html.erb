@@ -7,19 +7,32 @@
 		<%= csrf_meta_tags %>
 		<script>
 			$(function() {
-				$('body').css("display", "none");
+				readyFunction();
 				
-				$('body').fadeIn(700);
+				$('#columns').css("display", "none");
 				
-				$('#back_to_top').click(function() {
+				$('#columns').fadeIn(700);
+				
+				$(document).on('DOMNodeInserted', function() {
+					readyFunction();
+				})
+				
+				$(document).on('click', '#back_to_top', function() {
 					$('body').animate({scrollTop: 0}, 200);
 				})
+				
+				function readyFunction () {
+					$('#user_cart').blurjs({
+				      source: 'body',
+				      overlay: 'rgba(255,255,255,0.6)'
+					})
+				}
 			})
 		</script>
-		
 	</head>
+	
 	<body class='<%= controller.controller_name %>'>
-
+		<div id="wrapper">
 		<div id="banner" class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -124,15 +137,18 @@
 			</div>
 			<div id="main" class="span8">
 				<%= yield %>
-				<hr>
-				<footer id="footer">
-					Made by 13-web-117.
-				</footer>
 			</div>
 		</div>
 		<div id="back_to_top">
 			<%= image_tag("backtop1.png", alt: "Back to Top", title: t('.back_to_top')) %>
 		</div>
-
+		
+		<div id="push"></div>
+		
+		</div>
+		
+		<footer id="footer">
+			Made by 13-web-117.
+		</footer>
 	</body>
 </html>
