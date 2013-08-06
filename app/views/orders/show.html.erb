@@ -1,6 +1,10 @@
 <h1>Order Information</h1>
 <div class="blur row-fluid span11" style="padding:20px; padding-top:20px">
-	<h4>User Information<%= link_to "Ship", orders_ship_url(@order), class: "btn btn-primary pull-right" %></h4>
+	<h4>User Information
+		<% if session[:user_permission] == 1 %>
+		<%= link_to "Ship", orders_ship_url(@order), class: "btn btn-primary pull-right" %>
+		<% end %>
+	</h4>
 	<%= image_tag "head.jpg", class: "thumbnail span2" %>
 	<div class="span9">
 	<p id="notice">

@@ -34,6 +34,7 @@ Depot::Application.routes.draw do
     post '/store/search' => 'store#search'
     get '/orders/ship/:id' => 'orders#ship', as: :orders_ship
     get '/products/add_like/:id' => 'products#add_like', as: :products_add_like
+    get '/orders/user_orders/:id' => 'orders#user_orders', as: :orders_user_orders
   end
 
   # get "store/index"

@@ -79,6 +79,9 @@
 										<%= link_to t('.my_cart'), user_cart_show_user_cart_url %>
 										<% end %>
 									</li>
+									<li>
+										<%= link_to t('.my_orders'), orders_user_orders_url(id: session[:user_id]) %>
+									</li>
 									<% if session[:user_permission] == 1 %>
 									<li class="divider"></li>
 									<li>

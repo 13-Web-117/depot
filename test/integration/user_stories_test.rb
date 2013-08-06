@@ -22,8 +22,12 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
     assert_equal ruby_book, cart.line_items[0].product
 
     get "orders/new"
-    assert_response :success
-    assert_template "new"
+    if session[:user_id] == nil
+      assert_response :redirect
+    else
+      assert_response :success
+      assert_template "new"
+    end
 
     post_via_redirect "/orders",
                   order: {  name:     "Dave Thomas",

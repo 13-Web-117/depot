@@ -7,14 +7,7 @@ class User < ActiveRecord::Base
   
   has_one :cart, dependent: :destroy
   has_many :comments, dependent: :destroy
-  
-    
-  # def get_user_cart
-    # unless cart
-      # cart = Cart.create
-    # end
-    # cart
-  # end
+  has_many :orders, dependent: :destroy
   
   def set_user_cart(current_cart)
     cart = current_cart

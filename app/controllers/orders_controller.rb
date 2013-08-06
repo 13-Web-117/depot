@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  skip_before_filter :authorize, only: [:new, :create]
+  skip_before_filter :authorize, only: [:show, :new, :create, :user_orders]
   before_action :set_order, only: [:show, :edit, :update, :destroy, :ship]
 
   # GET /orders
@@ -17,6 +17,10 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
+    @order = Order.find(params[:id])
+    if session[:user_permission] == 0 and @order.user.id != session[:user_id]
+      redirect_to login_url, alert: "Permission denied. Your are not an administrator."
+    end
   end
 
   # GET /orders/new
@@ -24,6 +28,10 @@ class OrdersController < ApplicationController
     @cart = current_cart
     if @cart.line_items.empty?
       redirect_to store_url, flash: {error: "Your cart is empty"}
+      return
+    end
+    if session[:user_id] == nil
+      redirect_to login_url, alert: "Please login before checkout"
       return
     end
     
@@ -39,6 +47,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(current_cart)
+    @order.user_id = session[:user_id]
 
     respond_to do |format|
       if @order.save
@@ -54,6 +63,7 @@ class OrdersController < ApplicationController
     end
   end
   
+  # GET /orders/ship/:id
   def ship
     @order.status = 1;
     respond_to do |format|
@@ -88,6 +98,12 @@ class OrdersController < ApplicationController
       format.html { redirect_to orders_url }
       format.json { head :no_content }
     end
+  end
+  
+  # GET /orders/user_orders
+  def user_orders
+    @user = User.find(params[:id])
+    @orders = @user.orders
   end
 
   private
