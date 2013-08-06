@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   skip_before_filter :authorize, only: [:new, :create]
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :destroy, :ship]
 
   # GET /orders
   # GET /orders.json
@@ -50,6 +50,18 @@ class OrdersController < ApplicationController
         @cart = current_cart
         format.html { render action: 'new' }
         format.json { render json: @order.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+  def ship
+    @order.status = 1;
+    respond_to do |format|
+      if @order.save
+        OrderNotifier.shipped(@order).deliver
+        format.html { redirect_to orders_url, notice: 'Products have been shipped.' }
+      else
+        format.html { render action: 'index' }
       end
     end
   end

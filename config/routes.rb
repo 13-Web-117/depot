@@ -32,6 +32,7 @@ Depot::Application.routes.draw do
     post '/' => 'store#index'
     post '/store/show' => 'store#show'
     post '/store/search' => 'store#search'
+    get '/orders/ship/:id' => 'orders#ship', as: :orders_ship
   end
 
   # get "store/index"

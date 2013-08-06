@@ -74,6 +74,7 @@ es:
       address:        "Direccián"
       email:          "E-mail"
       pay_type:       "Forma de pago"
+      status:         "Estado"
       show:           "Ver"
       edit:           "Editar"
       destroy:        "Borrar"

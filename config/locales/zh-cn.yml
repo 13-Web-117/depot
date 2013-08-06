@@ -74,6 +74,7 @@ zh-cn:
       address:  "联系地址"
       email:  "联系邮箱"
       pay_type:  "支付方式"
+      status:    "状态"
       show:  "查看"
       edit:  "编辑"
       destroy:  "删除"

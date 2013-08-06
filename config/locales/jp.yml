@@ -74,6 +74,7 @@ jp:
       address:  "アドレス"
       email:  "電子メール"
       pay_type:  "ペイメント"
+      status:    "ステータス"
       show:  "ビュー"
       edit:  "編集"
       destroy:  "削除"
