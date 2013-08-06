@@ -26,6 +26,7 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    @product.image_url = upload
 
     respond_to do |format|
       if @product.save
@@ -68,6 +69,17 @@ class ProductsController < ApplicationController
       format.atom
     end
   end
+  
+  def upload
+    uploaded_io = params[:product][:image]
+    if uploaded_io == nil
+      return
+    end
+    File.open(Rails.root.join('app/assets', 'images', uploaded_io.original_filename), 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
+    uploaded_io.original_filename
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -77,6 +89,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :image_url, :price, :category_id)
+      params.require(:product).permit(:title, :description, :image_url, :price, :category_id, :image)
     end
 end
