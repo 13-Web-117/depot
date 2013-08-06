@@ -28,6 +28,7 @@ jp:
       add_html:   "カートに入れる"
       comment:    "コメント"
       close_modal: "クローズ"
+      like:        "のような"
     index:
       page_title:  "商品リスト"
       page_subtitle:  "ここにあなたの製品を管理する."

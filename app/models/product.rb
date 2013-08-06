@@ -15,7 +15,7 @@ class Product < ActiveRecord::Base
   
   accepts_nested_attributes_for :category
   
-  attr_accessible :title, :description, :image_url, :price, :category_id
+  attr_accessible :title, :description, :image_url, :price, :category_id, :like_num
   
   def self.search(search)
     if search

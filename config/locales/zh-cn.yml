@@ -28,6 +28,7 @@ zh-cn:
       add_html:  "加入购物车"
       comment:    "评论"
       close_modal: "关闭"
+      like:        "赞"
     index:
       page_title:  "商品列表"
       page_subtitle:  "在这里管理您的商品."

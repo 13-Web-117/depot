@@ -28,6 +28,7 @@ es:
       add_html:   "A&ntilde;adir al Carrito"
       comment:    "Comentario"
       close_modal: "Cerrar"
+      like:        "Como"
     index:
       page_title:  "Lista de Productos"
       page_subtitle:  "Administre sus productos aquí"

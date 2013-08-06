@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :add_like]
 
   # GET /products
   # GET /products.json
@@ -79,6 +79,15 @@ class ProductsController < ApplicationController
       file.write(uploaded_io.read)
     end
     uploaded_io.original_filename
+  end
+  
+  def add_like
+    @product.like_num += 1
+    respond_to do |format|
+      if @product.save
+        format.js
+      end
+    end
   end
 
   private
