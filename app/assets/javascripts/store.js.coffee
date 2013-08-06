@@ -8,3 +8,4 @@ $ -> $(document).on 'click', '.add_btn', -> $(this).parent().parent().parent().p
 $ -> $(document).on 'DOMNodeInserted', -> $('#my-carousel').carousel()
 
 $ -> $('#my-carousel').carousel()
+

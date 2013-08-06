@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   has_secure_password
   
   has_one :cart, dependent: :destroy
+  has_many :comments, dependent: :destroy
   
     
   # def get_user_cart

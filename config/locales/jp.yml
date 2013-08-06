@@ -26,6 +26,8 @@ jp:
   products:
     product:
       add_html:   "カートに入れる"
+      comment:    "コメント"
+      close_modal: "クローズ"
     index:
       page_title:  "商品リスト"
       page_subtitle:  "ここにあなたの製品を管理する."
@@ -97,6 +99,7 @@ jp:
       messages:
         inclusion:  "リストに含まれていない"
         blank:      "空白にすることはできません"
+        not_a_number: "有効な数値ではありません"
   
   errors:
     template:

@@ -1,5 +1,6 @@
 Depot::Application.routes.draw do
 
+
   # get "user_cart/show_user_cart"
   # get 'admin' => 'admin#index'
 #   
@@ -21,6 +22,7 @@ Depot::Application.routes.draw do
     resources :orders
     resources :line_items
     resources :carts
+    resources :comments
     resources :categories
     resources :parent_categories
     resources :products do

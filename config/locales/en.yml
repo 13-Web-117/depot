@@ -47,6 +47,8 @@ en:
   products:
     product:
       add_html:   "Add to Cart"
+      comment:    "Comment"
+      close_modal: "Close"
     index:
       page_title:  "Listing products"
       page_subtitle:  "Manage products here."

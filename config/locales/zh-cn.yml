@@ -26,6 +26,8 @@ zh-cn:
   products:
     product:
       add_html:  "加入购物车"
+      comment:    "评论"
+      close_modal: "关闭"
     index:
       page_title:  "商品列表"
       page_subtitle:  "在这里管理您的商品."
@@ -89,6 +91,7 @@ zh-cn:
       messages:
         inclusion:  "没有从列表中选择"
         blank:      "不能为空"
+        not_a_number: "不是一个合法数字"
   
   errors:
     template:

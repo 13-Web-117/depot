@@ -26,6 +26,8 @@ es:
   products:
     product:
       add_html:   "A&ntilde;adir al Carrito"
+      comment:    "Comentario"
+      close_modal: "Cerrar"
     index:
       page_title:  "Lista de Productos"
       page_subtitle:  "Administre sus productos aquí"
@@ -97,6 +99,7 @@ es:
       messages:
         inclusion:  "no est&aacute; incluido en la lista"
         blank:      "no puede quedar en blanco"
+        not_a_number: "no es un número válido"
   
   errors:
     template:
