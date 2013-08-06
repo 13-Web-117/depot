@@ -73,7 +73,7 @@ class ProductsController < ApplicationController
   def upload
     uploaded_io = params[:product][:image]
     if uploaded_io == nil
-      return
+      return 'default.jpg'
     end
     File.open(Rails.root.join('app/assets', 'images', uploaded_io.original_filename), 'wb') do |file|
       file.write(uploaded_io.read)
