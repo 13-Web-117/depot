@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  skip_before_filter :authorize, only: [:add_like]
   before_action :set_product, only: [:show, :edit, :update, :destroy, :add_like]
 
   # GET /products
