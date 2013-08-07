@@ -1,6 +1,7 @@
 <div id="entry<%= product.id%>" class="entry bsa well">
 	<%= image_tag(product.image_url, class: "thumbnail book_img") %>
 	<h3 class="item_name"><%= product.title %></h3>
+	
 	<p>
 		<%= sanitize(product.description) %>
 	</p>
@@ -26,6 +27,7 @@
 			×
 		</button>
 		<h3 id="myModalLabel"><%= product.title %></h3>
+		
 	</div>
 	<div class="modal-body">
 		<%= render partial: 'comments/new_comment', locals: { product_id: product.id } %>
